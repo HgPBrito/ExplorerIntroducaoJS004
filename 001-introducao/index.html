@@ -1,0 +1,109 @@
+<script>
+    //declaração de variavel tipo var
+    var name
+
+    //atribuição de valores
+    name = 'Hugo'
+
+    //função para saber o tipo de dado 'typeof'
+    console.log(typeof name)
+
+    //agrupamento de declarações
+    let age, isHuman
+
+    age = 18
+    isHuman = true
+
+    //multiplos argumentos na função
+    //console.log (name, age, isHuman)
+
+    //escrita de texto mais variaveis concatenando valores
+    console.log ('O ' + name + ' tem ' + age + ' anos.')
+
+    //escrita de texto mais variaveis com interpolação
+    console.log (`O ${name} tem ${age} anos.`)
+
+    //object
+    const person = {
+        name: 'John',
+        age: 30,
+        weight: 88.6,
+        isAdmin: true
+    }
+
+    //forma de pegar somente a propriedade
+    console.log(person.name)
+
+    //escrita de texto mais variaveis com interpolação
+    console.log (`O ${person.name} tem ${person.age} anos.`)
+
+    //array
+    const animals = [
+        'Lion',
+        'Monkey',
+        {
+            name: 'Cat',
+            age: 3
+        }
+    ]
+
+    //acessar valores dentro do Array
+    console.log(animals[0])
+    //acessar tamanho do Array
+    console.log(animals.length)
+    //acessar objeto dentro do Array
+    console.log(animals[2])
+    //acessar objeto dentro do Array
+    console.log(animals[2].name)
+
+    /* Exercicios */
+
+    var varWeight
+    let letWeight = 87.4
+    const constWeight = 87.4
+
+    console.log (typeof varWeight)
+    console.log (typeof letWeight)
+    console.log (typeof constWeight)
+
+    const construction = {
+        name: 'Street 5',
+        age: 30,
+        stars: 4.5,
+        isSuvscribed: true
+    }
+
+    let student = {}
+
+    console.log (typeof student)
+
+    student = {
+        name: 'Hugo',
+        age: 30,
+        weight: 87.7,
+        isSuvscribed: true
+    }
+
+    console.log (`${student.name} de idade ${student.age} pesa ${student.weight} kg.`) 
+    let students = [];
+    students.push(student);
+    console.log (students);
+
+    console.log (students[0]);
+
+    var medicineStudent = {
+        name: 'Carla',
+        age: 43,
+        weight: 68.9,
+        isSuvscribed: true
+    }
+
+    students.push(medicineStudent);
+
+    console.log (students[1]);
+
+    console.log(a) //undefined, por causa do hoisting
+    var a = 1
+
+    /*------fim exercicios------*/
+</script>
